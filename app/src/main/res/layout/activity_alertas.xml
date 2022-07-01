@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252323"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/g_nero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violenciaGenero" />
+
+    <Button
+        android:id="@+id/violenciaGenero"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="468dp"
+        android:background="@drawable/ic_genero"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_genero"
+        app:iconSize="75dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_otro"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/ic_otro"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_genero"
+        app:iconSize="75dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/racismo"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_racismo"
+
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_racismo"
+        app:iconSize="75dp"
+        app:iconTint="#010101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pelea"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/violenciaFisica"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_pelea"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_pelea"
+        app:iconSize="75dp"
+        app:iconTint="#060606"
+        app:layout_constraintBottom_toTopOf="@+id/pelea"
+        app:layout_constraintEnd_toStartOf="@+id/violenciaGenero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/inclusion"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_inclusion"
+
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="38dp"
+        app:icon="@drawable/ic_inclusion"
+        app:iconSize="75dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genero"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#EA1818"
+        android:text="@string/Cancelar"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inclusion" />
+
+    <TextView
+        android:id="@+id/pelea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="182dp"
+        android:text="@string/pelea"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/genero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violenciaFisica" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/racismo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/racismo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/inclusion"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inclusion" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="189dp"
+        android:text="@string/otro"
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_otro"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
